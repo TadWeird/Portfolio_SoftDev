@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@1,500&family=Inter:wght@100;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@1,500&family=Inter:wght@100;500&family=Raleway:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@1,500&family=Inter:wght@100;500&family=Nunito+Sans:opsz,wght@6..12,200&family=Raleway:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;500&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+
+.title_container
+{
+    background-color: #5454C5;
+    width: 100%;
+    height: 1252px;
+    /* background: repeating-linear-gradient(
+        90deg,
+        #9D44C0,
+        #9D44C0 5%,
+        #EC53B0 5%,
+        #EC53B0 10%
+    );
+    animation: move-it 90s linear infinite;
+    background-size: 1900px 1900px; */
+
+    /* @keyframes move-it {
+    0% {
+      background-position: initial;
+    }
+    100% {
+      background-position: 1900px 0px;
+    }
+  } */
+}
+
+.topnavbar li 
+{
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+}
+
+.topnavbar a 
+{
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    /* transition: color 0.3s, border-bottom 0.3s; */
+}
+
+.topnavbar a::before 
+{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    bottom: -3px;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+/* .topnavbar a:hover 
+{
+    color: var(--light-blue);
+} */
+
+.topnavbar a:hover::before 
+{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background: rgba(31, 18, 75, 0.45);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(12.1px);
+    -webkit-backdrop-filter: blur(12.1px);
+    border: 1px solid rgba(31, 18, 75, 0.44);
+
+}
+
+
+
+.projects
+{
+    background-color: #342056;
+    width: 100%;
+    height: 1252px;
+}
+
+.intro
+{
+    color:aliceblue;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    padding-top: 18%;
+    font-family: 'Inter', sans-serif;
+}
+
+.intro_context
+{
+    color:aliceblue;
+    font-size: 200%;
+    display: flex;
+    justify-content: center;
+    font-family: 'Nunito Sans', sans-serif;
+
+}
