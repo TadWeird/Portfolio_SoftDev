@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@1,500&family=Inter:wght@100;500&family=Raleway:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@1,500&family=Inter:wght@100;500&family=Nunito+Sans:opsz,wght@6..12,200&family=Raleway:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
 *
 {
     margin: 0;
@@ -13,7 +14,7 @@
 {
     background-color: #5454C5;
     width: 100%;
-    height: 1252px;
+    height: 1080px;
     /* background: repeating-linear-gradient(
         90deg,
         #9D44C0,
@@ -37,8 +38,24 @@
 .topnavbar li 
 {
     display: inline-block;
-    margin-right: 20px;
+    margin-left: 20px;
     position: relative;
+    font-family: 'Nunito Sans', sans-serif;
+
+}
+
+.topnavbar
+{
+    margin-left: -100px;
+}
+
+.logo
+{
+    background-image: url("Assets/pn_sqr_dark.png");
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 400px;
+    display: flex;
 }
 
 .topnavbar a 
@@ -97,8 +114,6 @@
 
 }
 
-
-
 .projects
 {
     background-color: #342056;
@@ -106,7 +121,7 @@
     height: 1252px;
 }
 
-.intro
+/* .intro
 {
     color:aliceblue;
     font-size: 100px;
@@ -114,7 +129,98 @@
     justify-content: center;
     padding-top: 18%;
     font-family: 'Inter', sans-serif;
+} */
+
+.intro 
+{
+    color:aliceblue;
+    font-size: 100px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10%;
+    /* margin-left: 2%; */
+    font-family: 'Inter', sans-serif;
 }
+
+.intro b 
+{
+    float: left;
+    overflow: hidden;
+    position: relative;
+    height: 108px;
+    top: 40px;
+}
+.intro .innerhell 
+{
+    display: flex;
+    color: #ffffff;
+    position: relative;
+    white-space: nowrap;
+    top: 0;
+    left: 0;
+  
+  
+  /*animation*/
+  -webkit-animation:move 5s;
+     -moz-animation:move 5s;
+      -ms-animation:move 5s;
+       -o-animation:move 5s;
+          animation:move 5s;
+  /*animation-iteration-count*/
+  -webkit-animation-iteration-count: finite;
+     -moz-animation-iteration-count: finite;
+      -ms-animation-iteration-count: finite;
+       -o-animation-iteration-count: finite;
+          animation-iteration-count: finite;
+  /*animation-delay*/
+  -webkit-animation-delay:1s;
+     -moz-animation-delay:1s;
+      -ms-animation-delay:1s;
+       -o-animation-delay:1s;
+          animation-delay:1s;
+}
+@keyframes move
+{
+    0%  { top: 0%; }
+    20% { top: -135%; }
+    40% { top: -255%; }
+    60% { top: -370%; }
+    80% { top: -480%; }
+}
+  
+/* @-webkit-keyframes move 
+{
+    0%  { top: 0%; }
+    20% { top: -150%; }
+    40% { top: -250%; }
+    60% { top: -300%; }
+    80% { top: -450%; }
+}
+@-moz-keyframes move 
+{
+    0%  { top: 0%; }
+    20% { top: -150%; }
+    40% { top: -250%; }
+    60% { top: -300%; }
+    80% { top: -450%; }
+}
+@-o-keyframes move {
+    0%  { top: 0%; }
+    20% { top: -150%; }
+    40% { top: -250%; }
+    60% { top: -300%; }
+    80% { top: -450%; }
+  }
+@keyframes move 
+{
+    0%  { top: 0%; }
+    20% { top: -150%; }
+    40% { top: -250%; }
+    60% { top: -300%; }
+    80% { top: -450%; }
+} */
 
 .intro_context
 {
@@ -123,5 +229,95 @@
     display: flex;
     justify-content: center;
     font-family: 'Nunito Sans', sans-serif;
+    padding-top: 5%;
+}
+
+.intro2
+{
+    color:aliceblue;
+    font-size: 160%;
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 10%;
+}
+
+.intro2_context
+{
+    color:aliceblue;
+    font-size: 160%;
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 1%;
+}
+
+.mainname
+{
+    color:aliceblue;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    padding-top: .1%;
+    font-size: 300%;
+}
+
+c 
+{
+    background: linear-gradient(0deg, #ffe819, #ffe819) no-repeat right bottom / 0 var(--bg-h);
+    transition: background-size 500ms;
+    --bg-h: 110%;
+    color: aliceblue;
+}
+c:where(:hover, :focus-visible) 
+{
+    background-size: 110% var(--bg-h);
+    background-position-x: left;
+    color: #0a070f;
+}
+
+
+.waving
+{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.waving-hand 
+{
+    animation: wave 2.1s 0.6s infinite;
+    transform-origin: 275% 275%;
+    display: inline-block;
+    font-size: 400%;
 
 }
+@keyframes wave 
+{
+    0% {
+      transform: rotate(0deg);
+    }
+    10% {
+      transform: rotate(16deg);
+    }
+    20% {
+      transform: rotate(-6deg);
+    }
+    30% {
+      transform: rotate(16deg);
+    }
+    40% {
+      transform: rotate(-4deg);
+    }
+    50% {
+      transform: rotate(16deg);
+    }
+    60% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+}
+
