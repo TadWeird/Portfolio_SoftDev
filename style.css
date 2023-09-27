@@ -14,7 +14,7 @@
 {
   background: linear-gradient(#5151c5, #8088e4);
     width: 100%;
-    height: 1080px;
+    height: 950px;
     /* background: repeating-linear-gradient(
         90deg,
         #9D44C0,
@@ -139,7 +139,7 @@
     text-align: center;
     justify-content: center;
     align-items: center;
-    padding-top: 10%;
+    padding-top: 5%;
     /* margin-left: 2%; */
     font-family: 'Inter', sans-serif;
     z-index: 2;
@@ -190,38 +190,6 @@
     60% { top: -370%; }
     80% { top: -480%; }
 }
-  
-/* @-webkit-keyframes move 
-{
-    0%  { top: 0%; }
-    20% { top: -150%; }
-    40% { top: -250%; }
-    60% { top: -300%; }
-    80% { top: -450%; }
-}
-@-moz-keyframes move 
-{
-    0%  { top: 0%; }
-    20% { top: -150%; }
-    40% { top: -250%; }
-    60% { top: -300%; }
-    80% { top: -450%; }
-}
-@-o-keyframes move {
-    0%  { top: 0%; }
-    20% { top: -150%; }
-    40% { top: -250%; }
-    60% { top: -300%; }
-    80% { top: -450%; }
-  }
-@keyframes move 
-{
-    0%  { top: 0%; }
-    20% { top: -150%; }
-    40% { top: -250%; }
-    60% { top: -300%; }
-    80% { top: -450%; }
-} */
 
 .intro_context
 {
@@ -301,6 +269,7 @@ c:where(:hover, :focus-visible)
     animation: wave 2.1s 0.6s infinite;
     transform-origin: 275% 275%;
     display: inline-block;
+    margin-right: 35px;
     font-size: 400%;
 
 }
@@ -335,7 +304,7 @@ c:where(:hover, :focus-visible)
 .title_container .cube {
     position: absolute;
     overflow: hidden;
-    top: 89vh;
+    top: 75vh;
     left: 5vw;
     width: 20px;
     height: 20px;
