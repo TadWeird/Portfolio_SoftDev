@@ -15,7 +15,9 @@
   background: linear-gradient(#5151c5, #8088e4);
     width: 100%;
     height: auto;
-    padding-bottom: 3%;
+    padding-bottom: 9%;
+
+    
     /* background: repeating-linear-gradient(
         90deg,
         #9D44C0,
@@ -106,7 +108,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100;
+    z-index: 500;
     background: rgba(31, 18, 75, 0.45);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(12.1px);
@@ -154,8 +156,7 @@
     white-space: nowrap;
     top: 0;
     left: 0;
-  
-  
+    z-index: 100;
   /*animation*/
   -webkit-animation:move 5s;
      -moz-animation:move 5s;
@@ -192,6 +193,7 @@
     justify-content: center;
     font-family: 'Nunito Sans', sans-serif;
     padding-top: 5%;
+    z-index: 100;
 }
 
 .intro2
@@ -202,6 +204,7 @@
     justify-content: center;
     font-family: 'Poppins', sans-serif;
     padding-top: 10%;
+    z-index: 100;
 }
 
 .intro2_context
@@ -209,9 +212,12 @@
     color:aliceblue;
     font-size: 160%;
     display: flex;
+    text-justify: inter-word;
+    text-align: center;
     justify-content: center;
     font-family: 'Poppins', sans-serif;
     padding-top: 1%;
+    z-index: 100;
 }
 
 .intro2_context2
@@ -219,9 +225,12 @@
     color:aliceblue;
     font-size: 160%;
     display: flex;
+    text-justify: inter-word;
+    text-align: center;
     justify-content: center;
     font-family: 'Poppins', sans-serif;
     padding-top: 1%;
+    z-index: 100;
 }
 
 .mainname
@@ -234,6 +243,7 @@
     font-weight: bold;
     padding-top: .1%;
     font-size: 300%;
+    z-index: 100;
 }
 
 c 
@@ -242,12 +252,14 @@ c
     transition: background-size 800ms;
     --bg-h: 110%;
     color: aliceblue;
+    z-index: 0;
 }
 c:where(:hover, :focus-visible) 
 {
     background-size: 110% var(--bg-h);
     background-position-x: left;
     color: #8088e4;
+
 }
 
 
@@ -256,6 +268,7 @@ c:where(:hover, :focus-visible)
     justify-content: center;
     align-items: center;
     text-align: center;
+    z-index: 100;
 }
 .waving-hand 
 {
@@ -264,6 +277,7 @@ c:where(:hover, :focus-visible)
     display: inline-block;
     margin-right: 35px;
     font-size: 400%;
+    z-index: 100;
 }
 @keyframes wave 
 {
@@ -305,11 +319,13 @@ c:where(:hover, :focus-visible)
     transform-origin: top left;
     transform: scale(0) rotate(0deg) translate(-50%, -50%);
     -webkit-animation: cube 12s ease-in forwards infinite;
-     animation: cube 12s ease-in forwards infinite;
-     z-index: 1;
+    animation: cube 12s ease-in forwards infinite;
+    z-index: 0;
   }
   .cube:nth-child(2n) {
     border-color: #323250;
+    z-index: -1;
+
   }
   .cube:nth-child(2) {
     -webkit-animation-delay: 2s;
@@ -384,14 +400,45 @@ c:where(:hover, :focus-visible)
   background-image: linear-gradient(180deg, #c4bfda 0%, #f5f7fa 30%);
   width: 100%;
   height: auto;
-  padding-bottom: 10%;
+  padding-bottom: 1%;
+  z-index: 2;
+
+}
+
+.label2
+{
+  color: #6262d3;
+  /* color:#2b2927; */
+  font-size:60px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10%;
+  /* margin-left: 2%; */
+  font-family: 'Inter', sans-serif;
+}
+
+.aboutme_context2
+{
+  color: #8088e4;
+  font-size: 150%;
+  display: flex;
+  text-justify: inter-word;
+  text-align: center;
+  justify-content: center;
+  font-family: 'Nunito Sans', sans-serif;
+  padding-top: 2%;
+  margin-left: 20%;
+  margin-right: 20%;
+  font-weight: bold;
 }
 
 .label 
 {
   color: #6262d3;
   /* color:#2b2927; */
-  font-size: 70px;
+  font-size: 55px;
   display: flex;
   text-align: center;
   justify-content: center;
@@ -414,4 +461,62 @@ c:where(:hover, :focus-visible)
   margin-left: 20%;
   margin-right: 20%;
   font-weight: bold;
+}
+
+.techno
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  background-color: #e0e0e0;
+  background-image: linear-gradient(360deg, #c4bfda 0%, #f5f7fa 30%);
+}
+
+.innertech 
+{
+  min-height: 50vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
+}
+
+.innertech .box
+{
+  position: relative;
+  width: 225px;
+  height: 225px;
+  margin-left: 2%;
+  transition: 0.5s;
+}
+
+.innertech .box img 
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  object-fit: cover;
+}
+
+.innertech:hover > :not(:hover)
+{
+  margin: 10px 10px;
+  filter: blur(4px);
+  transform: perspective(300px) scale(0.95);
+}
+
+.innertech .box:hover ~ .box 
+{
+  /* margin: 10px -10px; */
+  filter: blur(4px);
+  transform: perspective(300px) scale(.95);
+}
+.innertech .box:hover
+{
+  transform: perspective(450px) scale(1.5);
+  z-index: 1000;
 }
