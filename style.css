@@ -15,7 +15,7 @@
   background: linear-gradient(#5151c5, #8088e4);
     width: 100%;
     height: auto;
-    padding-bottom: 12%;
+    padding-bottom: 5%;
 }
 
 .topnavbar li 
@@ -174,7 +174,7 @@
     display: flex;
     justify-content: center;
     font-family: 'Poppins', sans-serif;
-    padding-top: 10%;
+    padding-top: 2%;
     z-index: 100;
 }
 
@@ -427,6 +427,22 @@ c:where(:hover, :focus-visible)
   font-weight: bold;
 }
 
+.mypic
+{
+  justify-content: center;
+  align-items: center;
+  text-justify: inter-word;
+  display: flex;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  margin-top: 1%;
+}
+
+.picme
+{
+  width: 20%;
+  height: auto;
+}
+
 .techno
 {
   display: flex;
@@ -434,7 +450,7 @@ c:where(:hover, :focus-visible)
   align-items: center;
   height: auto;
   background-color: #f5f7fa;
-  padding-bottom: 10%;
+  padding-bottom: 1%;
 }
 
 .skills_n_technology
@@ -508,7 +524,7 @@ c:where(:hover, :focus-visible)
   text-align: center;
   justify-content: center;
   align-items: center;
-  padding-top: 5%;
+  padding-top: 10%;
   font-family: 'Inter', sans-serif;
 }
 
@@ -783,7 +799,7 @@ c:where(:hover, :focus-visible)
 {
   background-color: #5151c5;
   color: #f5f7fa;
-  font-size: 150%;
+  font-size: 120%;
   display: flex;
   text-justify: inter-word;
   text-align: center;
@@ -809,6 +825,7 @@ html
   background: #f5f7fa; 
   margin-block: .7em;
   border-radius: 100vw;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
 }
  
 
