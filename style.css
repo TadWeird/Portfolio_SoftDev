@@ -120,7 +120,7 @@
 .intro .innerhell 
 {
     display: flex;
-    color: #ffffff;
+    color: aliceblue;
     position: relative;
     white-space: nowrap;
     top: 0;
@@ -349,7 +349,7 @@ c:where(:hover, :focus-visible)
   .aboutme
 {
   background-color: #e0e0e0;
-  background-image: linear-gradient(180deg, #c4bfda 0%, #f5f7fa 30%);
+  background-image: linear-gradient(180deg, #f5f7fa 0%, #f5f7fa 30%);
   width: 100%;
   height: auto;
   padding-bottom: 1%;
