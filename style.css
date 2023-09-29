@@ -443,7 +443,7 @@ c:where(:hover, :focus-visible)
   align-items: center;
   height: auto;
   background-color: #f5f7fa;
-  padding-top: 2%;
+  padding-top: 10%;
 }
 
 .innertech 
