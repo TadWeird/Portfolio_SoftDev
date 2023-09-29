@@ -209,7 +209,7 @@ c
     transition: background-size 800ms;
     --bg-h: 110%;
     color: aliceblue;
-    z-index: 10;
+    /* z-index: 10; */
 }
 c:where(:hover, :focus-visible) 
 {
