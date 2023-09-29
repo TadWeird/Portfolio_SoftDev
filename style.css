@@ -106,7 +106,6 @@
     justify-content: center;
     align-items: center;
     padding-top: 5%;
-    /* margin-left: 2%; */
     font-family: 'Inter', sans-serif;
 }
 
@@ -127,25 +126,9 @@
     top: 0;
     left: 0;
     z-index: 100;
-  
-    /*animation*/
-  /* -webkit-animation:move 5s;
-     -moz-animation:move 5s;
-      -ms-animation:move 5s;
-       -o-animation:move 5s; */
-          animation:move 5s;
-
-  /* -webkit-animation-iteration-count: finite;
-     -moz-animation-iteration-count: finite;
-      -ms-animation-iteration-count: finite;
-       -o-animation-iteration-count: finite; */
-          animation-iteration-count: finite;
-
-  /* -webkit-animation-delay:1s;
-     -moz-animation-delay:1s;
-      -ms-animation-delay:1s;
-       -o-animation-delay:1s; */
-          animation-delay:1s;
+    animation:move 5s;
+    animation-iteration-count: finite;
+    animation-delay:1s;
 }
 @keyframes move
 {
@@ -732,7 +715,7 @@ c:where(:hover, :focus-visible)
 .aboutme_context4
 {
   color: #f5f7fa;
-  font-size: 110%;
+  font-size: 130%;
   display: flex;
   text-justify: inter-word;
   text-align: center;
@@ -799,7 +782,7 @@ c:where(:hover, :focus-visible)
 {
   background-color: #5151c5;
   color: #f5f7fa;
-  font-size: 120%;
+  font-size: 100%;
   display: flex;
   text-justify: inter-word;
   text-align: center;
