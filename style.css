@@ -16,26 +16,6 @@
     width: 100%;
     height: auto;
     padding-bottom: 12%;
-
-    
-    /* background: repeating-linear-gradient(
-        90deg,
-        #9D44C0,
-        #9D44C0 5%,
-        #EC53B0 5%,
-        #EC53B0 10%
-    );
-    animation: move-it 90s linear infinite;
-    background-size: 1900px 1900px; */
-
-    /* @keyframes move-it {
-    0% {
-      background-position: initial;
-    }
-    100% {
-      background-position: 1900px 0px;
-    }
-  } */
 }
 
 .topnavbar li 
@@ -52,7 +32,7 @@
     margin-left: -100px;
 }
 
-/* .logo
+/* .logo Might Need For Later.
 {
     background-image: url("Assets/pn_sqr_dark.png");
     background-repeat: no-repeat;
@@ -117,16 +97,6 @@
 
 }
 
-/* .intro
-{
-    color:aliceblue;
-    font-size: 100px;
-    display: flex;
-    justify-content: center;
-    padding-top: 18%;
-    font-family: 'Inter', sans-serif;
-} */
-
 .intro 
 {
     color:aliceblue;
@@ -157,23 +127,24 @@
     top: 0;
     left: 0;
     z-index: 100;
-  /*animation*/
-  -webkit-animation:move 5s;
+  
+    /*animation*/
+  /* -webkit-animation:move 5s;
      -moz-animation:move 5s;
       -ms-animation:move 5s;
-       -o-animation:move 5s;
+       -o-animation:move 5s; */
           animation:move 5s;
-  /*animation-iteration-count*/
-  -webkit-animation-iteration-count: finite;
+
+  /* -webkit-animation-iteration-count: finite;
      -moz-animation-iteration-count: finite;
       -ms-animation-iteration-count: finite;
-       -o-animation-iteration-count: finite;
+       -o-animation-iteration-count: finite; */
           animation-iteration-count: finite;
-  /*animation-delay*/
-  -webkit-animation-delay:1s;
+
+  /* -webkit-animation-delay:1s;
      -moz-animation-delay:1s;
       -ms-animation-delay:1s;
-       -o-animation-delay:1s;
+       -o-animation-delay:1s; */
           animation-delay:1s;
 }
 @keyframes move
@@ -320,11 +291,9 @@ c:where(:hover, :focus-visible)
     transform: scale(0) rotate(0deg) translate(-50%, -50%);
     -webkit-animation: cube 12s ease-in forwards infinite;
     animation: cube 12s ease-in forwards infinite;
-    z-index: 0;
   }
   .cube:nth-child(2n) {
     border-color: #323250;
-    z-index: -1;
 
   }
   .cube:nth-child(2) {
@@ -407,14 +376,12 @@ c:where(:hover, :focus-visible)
 .label2
 {
   color: #6262d3;
-  /* color:#2b2927; */
   font-size:60px;
   display: flex;
   text-align: center;
   justify-content: center;
   align-items: center;
   padding-top: 10%;
-  /* margin-left: 2%; */
   font-family: 'Inter', sans-serif;
 }
 
@@ -436,14 +403,12 @@ c:where(:hover, :focus-visible)
 .label 
 {
   color: #6262d3;
-  /* color:#2b2927; */
   font-size: 55px;
   display: flex;
   text-align: center;
   justify-content: center;
   align-items: center;
   padding-top: 10%;
-  /* margin-left: 2%; */
   font-family: 'Inter', sans-serif;
 }
 
@@ -469,7 +434,17 @@ c:where(:hover, :focus-visible)
   align-items: center;
   height: auto;
   background-color: #f5f7fa;
-  /* background-image: linear-gradient(360deg, #c4bfda 0%, #f5f7fa 30%); */
+  padding-bottom: 10%;
+}
+
+.skills_n_technology
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  background-color: #f5f7fa;
+  padding-top: 2%;
 }
 
 .innertech 
@@ -557,7 +532,7 @@ c:where(:hover, :focus-visible)
 .projects
 {
   background-image: linear-gradient(360deg, #c4bfda 0%, #f5f7fa 30%);
-  /* width: 100%; */
+  width: 100%;
   height: auto;
   margin: 0;
   padding-bottom: 10%;
@@ -789,10 +764,10 @@ c:where(:hover, :focus-visible)
   content: '';
   position: absolute;
   width: 100%;
-  height: 4px;
+  height: 2px;
   border-radius: 4px;
   background-color: #f5f7fa;
-  bottom: 0;
+  bottom: -2px;
   left: 0;
   transform-origin: right;
   transform: scaleX(0);
@@ -817,3 +792,30 @@ c:where(:hover, :focus-visible)
   text-decoration: none;
   padding-bottom: .5%;
 }
+
+html 
+{
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: .9em;
+  background: transparent
+}
+
+
+::-webkit-scrollbar-track 
+{
+  background: #f5f7fa; 
+  margin-block: .7em;
+  border-radius: 100vw;
+}
+ 
+
+::-webkit-scrollbar-thumb 
+{
+  border: .2em solid #f5f7fa;
+  background-color:#5151c5;
+  border-radius: 100vw;
+}
+
